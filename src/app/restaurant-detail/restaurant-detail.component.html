@@ -3,9 +3,9 @@
 
   </h1>
 </section>
-<section class="content" *ngIf="restaurant">
+<section class="content">
 
-  <div class="row">
+  <div class="row" *ngIf="restaurant">
       <div class="col-xs-12">
         <div class="box box-solid">
           <div class="box-header with-border">
@@ -15,7 +15,7 @@
           </div>
           <!-- /.box-header -->
           <div class="box-body">
-            <div class="col-sm-3 col-xs-12" >
+            <div class="col-sm-3 col-xs-12">
               <img class="box-img-detail" [src]="restaurant?.imagePath" />
             </div>
 
